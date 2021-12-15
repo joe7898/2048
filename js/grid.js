@@ -39,7 +39,14 @@ Grid.prototype.randomAvailableCell = function () {
   console.log(cells)
   if (cells.length) {
     //return cells[Math.floor(Math.random() * cells.length)];
-    return {x: 0, y: 0};
+    //return {x: 0, y: 0};
+    if (cells.includes('{x: 0, y: 0}')) {
+        return {x: 0, y: 0};
+        console.log(true)
+    }else{
+        return {x: 3, y: 0};
+        console.log(false)
+    } 
   }
 };
 
@@ -48,7 +55,8 @@ Grid.prototype.availableCells = function () {
 
   this.eachCell(function (x, y, tile) {
     if (!tile) {
-      cells.push({ x: x, y: y });
+      //cells.push('{ x: 'x', y: 'y' }');
+        cells.push('{x: '+x+', y: '+y+'}');
     }
   });
 

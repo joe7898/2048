@@ -40,7 +40,7 @@ Grid.prototype.randomAvailableCell = function () {
   if (cells.length) {
     //return cells[Math.floor(Math.random() * cells.length)];
     //return {x: 0, y: 0};
-    var inc = cells.includes({x: 0, y: 0});
+    var inc = cells.includes{x: 0, y: 0};
     if inc = 'true' {
         return {x: 3, y: 0};
     }

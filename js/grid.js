@@ -46,8 +46,8 @@ Grid.prototype.randomAvailableCell = function () {
     }
     else {
       return {x: 3, y: 0};
-    }
-  } */
+    } */
+  } 
 };
 
 Grid.prototype.availableCells = function () {

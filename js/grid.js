@@ -38,7 +38,6 @@ Grid.prototype.randomAvailableCell = function () {
   var cells = this.availableCells();
   console.log(cells)
   if (cells.length) {
-    //return cells[Math.floor(Math.random() * cells.length)];
     if (cells.includes('{x: 0, y: 0}')) {
         return {x: 0, y: 0};
         console.log(true)
@@ -54,7 +53,6 @@ Grid.prototype.availableCells = function () {
 
   this.eachCell(function (x, y, tile) {
     if (!tile) {
-      //cells.push('{ x: 'x', y: 'y' }');
         cells.push('{x: '+x+', y: '+y+'}');
     }
   });

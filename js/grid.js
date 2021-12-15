@@ -42,10 +42,10 @@ Grid.prototype.randomAvailableCell = function () {
     //return {x: 0, y: 0};
     var inc = cells.includes{x: 0, y: 0};
     if inc = 'true' {
-        return {x: 3, y: 0};
+        return {x: 0, y: 0};
     }
     else {
-      return {x: 0, y: 0};
+      return {x: 3, y: 0};
     }
   }
 };

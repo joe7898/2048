@@ -39,15 +39,15 @@ Grid.prototype.randomAvailableCell = function () {
   console.log(cells)
   if (cells.length) {
     //return cells[Math.floor(Math.random() * cells.length)];
-    //return {x: 0, y: 0};
+    return {x: 0, y: 0};
     var inc = cells.includes({x: 0, y: 0});
-    if inc = 'true' {
+   /* if inc = 'true' {
         return {x: 0, y: 0};
     }
     else {
       return {x: 3, y: 0};
     }
-  }
+  } */
 };
 
 Grid.prototype.availableCells = function () {

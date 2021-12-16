@@ -38,11 +38,13 @@ Grid.prototype.randomAvailableCell = function () {
   var cells = this.availableCells();
   console.log(cells)
   if (cells.length) {
-    if (cells.includes("{x: 0, y: 0}")) {
+    if (cells.includes('{x: 0, y: 0}')) {
         return {x: 0, y: 0};
+        console.log(true)
     }else{
-        return {x: 3, y: 0}; 
-    }
+        return {x: 3, y: 0};
+        console.log(false)
+    } 
   }
 };
 

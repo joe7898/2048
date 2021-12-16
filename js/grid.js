@@ -43,7 +43,7 @@ Grid.prototype.randomAvailableCell = function () {
     } else if (cells.includes("{x: 3, y: 0}")) {
         return {x: 3, y: 0}; 
     } else {
-        rreturn cells[Math.floor(Math.random() * cells.length)];
+        return cells[Math.floor(Math.random() * cells.length)];
     } 
   }
 };
